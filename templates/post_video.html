@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>视频上传</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            height: 100%;
+        }
+        body {
+            height: 100%;
+            background-image: url('./static/background/imag.jpg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        #container {
+            background-color: rgba(255, 255, 255, 0.6);
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="pic" style="height: 100px;">
+            <img src="http://www.spic.com.cn/image2015/zdt_03.png">
+        </div>
+        <div id="top" style="text-align: center; margin-bottom: 20px;">
+            <h1>视频分类系统</h1>
+        </div>
+
+        <div id="upfile" >
+            <form action="" method="post" enctype="multipart/form-data" style="text-align: center;">
+                <input type="file"  name="file" multiple="multiple /">
+                <input type="submit" onclick="myFunction()" value="上传视频">
+            </form>
+            <br>
+        </div>
+        <div style="text-align: center">
+            <h2 id="demo"></h2>
+        </div>
+    </div>
+
+    <script>
+        function myFunction()
+        {
+             alert("文件上传中，上传成功后自动跳转");
+
+        }
+    </script>
+
+</body>
+</html>

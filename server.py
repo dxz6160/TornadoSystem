@@ -25,6 +25,6 @@ if __name__ == "__main__":
         static_path = os.path.join(os.path.dirname(__file__), "static"),
         template_path = os.path.join(os.path.dirname(__file__), "templates")
     )
-    http_server = tornado.httpserver.HTTPServer(app)
+    http_server = tornado.httpserver.HTTPServer(app, max_buffer_size=5048576000, max_body_size=5048576000)
     http_server.listen(options.port)
     tornado.ioloop.IOLoop.instance().start()
