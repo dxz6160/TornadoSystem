@@ -21,6 +21,7 @@ if __name__ == "__main__":
             (r"/Index", features.IndexHandler),
             (r"/PicturePlatform", features.PicHandler),
             (r"/VideoPlatform", features.VideoHandler),
+            (r"/FilePlatform", features.FileHandler),
         ],
         static_path = os.path.join(os.path.dirname(__file__), "static"),
         template_path = os.path.join(os.path.dirname(__file__), "templates")
